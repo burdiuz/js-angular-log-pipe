@@ -1,0 +1,58 @@
+{
+  "name": "@actualwave/log-pipe",
+  "version": "0.0.2",
+  "description": "Angular Pipe that log values into console",
+  "scripts": {
+    "build": "ng-packagr -p package.json",
+    "publish": "npm run build && cd ./dist && npm publish --access=public",
+    "test": "./node_modules/karma/bin/karma start"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "src/index.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burdiuz/js-angular-log-pipe.git"
+  },
+  "keywords": [
+    "angular",
+    "pipe",
+    "console",
+    "log",
+    "value",
+    "interpolation"
+  ],
+  "author": "Oleg Galaburda <burdiuz@gmail.com> (http://actualwave.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burdiuz/js-angular-log-pipe/issues"
+  },
+  "homepage": "https://github.com/burdiuz/js-angular-log-pipe#readme",
+  "peerDependencies": {
+    "@angular/common": "^10.0.0",
+    "@angular/compiler": "^10.0.0",
+    "@angular/core": "^10.0.0",
+    "rxjs": "^6.5.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^0.1000.4",
+    "@angular/common": "^10.0.0",
+    "@angular/compiler": "^10.0.0",
+    "@angular/compiler-cli": "^10.0.4",
+    "@angular/core": "^10.0.0",
+    "@types/jasmine": "^3.5.11",
+    "jasmine-core": "^3.6.0",
+    "jasmine-spec-reporter": "^5.0.2",
+    "karma": "^5.1.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^3.3.1",
+    "karma-typescript": "^5.0.3",
+    "ng-packagr": "^10.0.2",
+    "rxjs": "^6.5.4",
+    "tslint": "^6.1.2",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.9.7"
+  }
+}
